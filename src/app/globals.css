@@ -1,26 +1,149 @@
+/* src/app/globals.css */
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+ --background: #ebe7e1;
+--surface: #f6f2ec;
+
+--foreground: #1b1b1b;
+--muted: #5f5a54;
+
+--border: #d4cdc3;
+
+--accent: #3f3a36;
+
+  --container: 1280px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.65), transparent 35%),
+    linear-gradient(to bottom, #ece7df, #e2ddd5);
+
   color: var(--foreground);
+
   font-family: Arial, Helvetica, sans-serif;
+
+  overflow-x: hidden;
+
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+
+  margin-inline: auto;
+
+  padding-inline: 1.25rem;
+}
+
+.section {
+  padding-block: 6rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gold-line {
+  width: 90px;
+  height: 3px;
+
+  background: #2a2a2a;
+
+  border-radius: 999px;
+
+  margin-top: 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.6);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.glass {
+  background: rgba(255,255,255,0.55);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.texture-overlay {
+  position: relative;
+}
+
+.texture-overlay::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.025;
+
+  pointer-events: none;
+
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      #000 0px,
+      #000 1px,
+      transparent 1px,
+      transparent 8px
+    );
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-block: 4rem;
+  }
 }
