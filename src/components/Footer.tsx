@@ -32,13 +32,15 @@ export default function Footer() {
           {/* RIGHT */}
           <div className="flex flex-col items-start text-sm text-[#4f4a45] md:items-end">
             
-            <Image
-              src="/images/logo.png"
-              alt={site.name}
-              width={58}
-              height={58}
-              className="mb-3 opacity-90"
-            />
+         <Image
+  src="/images/logo.png"
+  alt={site.name}
+  width={90}
+  height={90}
+  quality={100}
+  priority
+  className="mb-3 h-[58px] w-[58px] object-contain"
+/>
 
             <a
               href={`tel:${site.phoneRaw}`}

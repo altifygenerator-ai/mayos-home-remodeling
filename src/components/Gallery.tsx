@@ -5,9 +5,9 @@ import SectionHeading from "./SectionHeading";
 
 const gallery = [
   "/images/gallery/gallery-1.jpeg",
-  "/images/gallery/gallery-2.jpeg",
+  "/images/gallery/gallery-2.png",
   "/images/gallery/gallery-3.jpeg",
-  "/images/gallery/gallery-4.jpg",
+  "/images/gallery/gallery-4.png",
 ];
 
 export default function Gallery() {
@@ -64,15 +64,16 @@ export default function Gallery() {
                   {item.label}
                 </div>
 
-                <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] bg-[#d8d1c7]">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
+             <div className="overflow-hidden rounded-[20px] bg-[#d8d1c7]">
+  <Image
+    src={item.src}
+    alt="Project photo"
+    width={1200}
+    height={800}
+    sizes="(max-width: 768px) 100vw, 33vw"
+    className="h-auto w-full object-contain"
+  />
+</div>
               </div>
             ))}
           </div>

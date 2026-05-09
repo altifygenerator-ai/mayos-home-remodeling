@@ -8,12 +8,13 @@ export default function Hero() {
     <section className="relative overflow-hidden">
       
       {/* BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/gallery/gallery-2.jpeg')",
-        }}
-      />
+  <div className="absolute inset-0">
+  <img
+    src="/images/gallery/gallery-2.png"
+    alt=""
+    className="h-full w-full object-cover object-[center_35%]"
+  />
+</div>
 
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-[rgba(20,20,20,0.58)]" />

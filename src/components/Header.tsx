@@ -13,13 +13,15 @@ export default function Header() {
       <div className="container flex h-20 items-center justify-between">
         
         <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/images/logo.png"
-            alt={site.name}
-            width={52}
-            height={52}
-            priority
-          />
+        <Image
+  src="/images/logo.png"
+  alt={site.name}
+  width={90}
+  height={90}
+  quality={100}
+  priority
+  className="h-[52px] w-[52px] object-contain"
+/>
 
           <div className="leading-tight">
             <p className="text-lg font-black tracking-tight text-[#1b1b1b]">
