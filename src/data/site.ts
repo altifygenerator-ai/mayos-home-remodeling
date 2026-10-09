@@ -8,7 +8,7 @@ export const site = {
 
   location: "Hot Springs, Arkansas",
 
-  url: "https://yourdomain.com",
+  url: "https://www.mayosconstruction.com",
 
   description:
     "Mayos Home Remodeling LLC provides home remodeling, repairs, renovations, flooring, drywall, carpentry, gutters, and home improvement services in Hot Springs, Arkansas.",
