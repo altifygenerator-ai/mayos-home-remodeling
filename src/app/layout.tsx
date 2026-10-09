@@ -5,10 +5,10 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   verification: {
-    google: "GHuO4wL5EQ8ci7ApmQAHmvH3aGivJY87Z0n2iFURMoE",
+    google: "XFacSBuN1tV7fi00Y4LkakFP9qOsYfuj-7srMAjXjHU",
   },
 
-  metadataBase: new URL("https://www.mayoshomeremodeling.com"),
+  metadataBase: new URL("https://www.mayosconstruction.com"),
 
   title: {
     default:
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title:
       "Mayos Home Remodeling LLC | Home Remodeling & Repairs in Hot Springs, AR",
     description: site.description,
-    url: "https://www.mayoshomeremodeling.com",
+    url: "https://www.mayosconstruction.com",
     siteName: site.name,
     locale: "en_US",
     type: "website",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.mayoshomeremodeling.com",
+    canonical: "https://www.mayosconstruction.com",
   },
 };
 
