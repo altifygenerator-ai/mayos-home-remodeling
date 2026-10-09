@@ -37,28 +37,30 @@ export default function Header() {
         <nav className="hidden items-center gap-8 md:flex">
           
           <a
-            href="#services"
+            href="/#services"
             className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]"
           >
             Services
           </a>
 
+          <Link href="/services/home-remodeling" className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]">Remodeling</Link>
+          <Link href="/locations/hot-springs-ar" className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]">Areas Served</Link>
           <a
-            href="#gallery"
+            href="/#gallery"
             className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]"
           >
             Gallery
           </a>
 
           <a
-            href="#about"
+            href="/#about"
             className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]"
           >
             About
           </a>
 
           <a
-            href="#quote"
+            href="/#quote"
             className="text-sm font-medium text-[#5f5a54] transition hover:text-[#1b1b1b]"
           >
             Contact
