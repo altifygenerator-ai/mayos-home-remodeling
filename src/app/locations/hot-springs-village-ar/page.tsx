@@ -29,7 +29,7 @@ export default function Page() {
  <p className="mt-8 text-lg leading-8 text-[#5f5a54]">Mayo's Home Remodeling works in the Hot Springs area and welcomes inquiries from homeowners in Hot Springs Village about renovations, repairs, and interior improvements. Contact us to confirm availability for your address.</p>
  <h2 className="mt-12 text-2xl font-bold">Discuss Your Project</h2>
  <p className="mt-4 leading-8 text-[#5f5a54]">Whether your home needs flooring, drywall repairs, carpentry, or more extensive updates, we can discuss the project and determine whether it fits our service area and schedule.</p>
- <div className="mt-10 flex flex-wrap gap-4"><a href={`tel:${site.phoneRaw}`} className="rounded-full bg-[#2f2b28] px-7 py-4 font-semibold text-white">Call ${site.phone}</a><Link href="/#quote" className="rounded-full border border-[#2f2b28] px-7 py-4 font-semibold">Request a Quote</Link></div>
+ <div className="mt-10 flex flex-wrap gap-4"><a href={`tel:${site.phoneRaw}`} className="rounded-full bg-[#2f2b28] px-7 py-4 font-semibold text-white">Call {site.phone}</a><Link href="/#quote" className="rounded-full border border-[#2f2b28] px-7 py-4 font-semibold">Request a Quote</Link></div>
  </div>
  <section className="mt-16 border-t border-black/10 pt-8"><h2 className="mb-5 text-2xl font-bold">Explore More</h2><div className="flex flex-wrap gap-6 text-[#5f5a54]"><Link className="underline" href="/services/home-remodeling">Home Remodeling</Link><Link className="underline" href="/services/flooring-drywall">Flooring &amp; Drywall</Link><Link className="underline" href="/locations/hot-springs-ar">Hot Springs</Link><Link className="underline" href="/locations/hot-springs-village-ar">Hot Springs Village</Link></div></section>
  </div></main><Footer/></>;
