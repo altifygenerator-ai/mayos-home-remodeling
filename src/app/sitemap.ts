@@ -1,7 +1,36 @@
 import type { MetadataRoute } from "next";
 
-const base = "https://www.mayosconstruction.com";
-const paths = ["/", "/services/home-remodeling", "/services/flooring-drywall", "/locations/hot-springs-ar", "/locations/hot-springs-village-ar"];
 export default function sitemap(): MetadataRoute.Sitemap {
-  return paths.map((path) => ({url: new URL(path, base).toString(), lastModified: new Date(), changeFrequency: "monthly", priority: path === "/" ? 1 : 0.7}));
+  return [
+    {
+      url: "https://www.mayosconstruction.com",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: "https://www.mayosconstruction.com/services/home-remodeling",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.mayosconstruction.com/services/flooring-drywall",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.mayosconstruction.com/locations/hot-springs-ar",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.mayosconstruction.com/locations/hot-springs-village-ar",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
 }
